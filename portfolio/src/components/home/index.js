@@ -11,7 +11,7 @@ const Home = () => {
 				<img src={Logo} alt="developer" />
 				am
 				<br />
-				A web developer
+				Software developer
 				</h1>
 				<h2> Software Developer with an interest in back-end services</h2>
 				<Link to="/contact" className='flat-button'> CONTACT ME </Link>
