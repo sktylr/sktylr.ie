@@ -1,7 +1,7 @@
 import './index.scss'
 import Logo from '../../assets/img/dummy-logo.png'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import AnimatedLetters from '../animated-letters'
 
 const Home = () => {
@@ -10,6 +10,12 @@ const Home = () => {
 	const nameChars = ['a', 'm']
 	const subHeadingChars = [...'Software developer.']
 
+	useEffect(() => {
+		setTimeout(() => {
+			return setLetterClass('text-animate-hover')
+		}, 4000)
+	}, [])
+
 	return (
 		<div className="container home-page">
 			<div className="text-zone">
@@ -17,7 +23,7 @@ const Home = () => {
 					<AnimatedLetters letterClass={letterClass} letters={['H', 'i', ',']} index={11} />
 					<br />
 					<AnimatedLetters letterClass={letterClass} letters={['I', '\'', 'm']} index={14} />
-					<img src={Logo} alt="developer" />
+					<img src={Logo} alt="S" />
 					<AnimatedLetters letterClass={letterClass} letters={nameChars} index={17} />
 					<br />
 					<AnimatedLetters letterClass={letterClass} letters={subHeadingChars} index={20} />
