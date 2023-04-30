@@ -1,8 +1,13 @@
 $primary-color: #ffd700;
 
-@import 'animate.scss';
+@import 'animate.css';
 
 @font-face {
   font-family: 'Century Gothic';
   src: url('./assets/fonts/CenturyGothic.ttf') format('ttf');
+}
+
+input,
+textarea {
+  font-family: 'Century Gothic';
 }
