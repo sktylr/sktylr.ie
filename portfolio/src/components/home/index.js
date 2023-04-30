@@ -1,8 +1,9 @@
 import './index.scss'
-import Logo from '../../assets/img/dummy-logo.png'
+import LogoTitle from '../../assets/img/dummy-logo.png'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import AnimatedLetters from '../animated-letters'
+import Logo from './logo'
 
 const Home = () => {
 
@@ -23,7 +24,7 @@ const Home = () => {
 					<AnimatedLetters letterClass={letterClass} letters={['H', 'i', ',']} index={11} />
 					<br />
 					<AnimatedLetters letterClass={letterClass} letters={['I', '\'', 'm']} index={14} />
-					<img src={Logo} alt="S" />
+					<img src={LogoTitle} alt="S" />
 					<AnimatedLetters letterClass={letterClass} letters={nameChars} index={17} />
 					<br />
 					<AnimatedLetters letterClass={letterClass} letters={subHeadingChars} index={20} />
@@ -31,6 +32,7 @@ const Home = () => {
 				<h2> Software Developer with an interest in back-end services</h2>
 				<Link to="/contact" className='flat-button'> CONTACT ME </Link>
 			</div>
+			<Logo />
 		</div>
 	)
 }
