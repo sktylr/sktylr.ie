@@ -7,9 +7,14 @@ const Logo = () => {
 
 	const backgroundRef = useRef();
 	const outlineLogoRef = useRef();
+	const didAnimate = useRef(false);
 
 	useEffect(() => {
 		gsap.registerPlugin(DrawSVGPlugin);
+
+		if (didAnimate.current)	{
+			return;
+		} else didAnimate.current = true;
 
 		gsap.timeline()
 			.to(backgroundRef.current, {
@@ -20,7 +25,7 @@ const Logo = () => {
 				drawSVG: 0,
 				duration: 15,
 			})
-	})
+	}, [])
 	
 	return (
 		<div className='logo-container' ref={backgroundRef}>
