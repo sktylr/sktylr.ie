@@ -69,9 +69,9 @@ const Contact = () => {
 						</form>
 					</div>
 				</div>
+				<Logo />
 			</div>
 			<Loader type='pacman' />
-			<Logo />
 		</>
 	)
 }

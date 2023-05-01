@@ -2,18 +2,12 @@ import './index.scss';
 
 const Logo = () => {
 	return (
-		<div className='logo-container'>
+		<div className='phone-container'>
 			
-			<svg
-				width="559pt"
-				height="897pt"
-				version="1.0"
-				viewBox="0 0 559 897"
-				xmlns="http://www.w3.org/2000/svg"
-			>
+			<svg>
 				<g
-					className="svg-container"
-					transform="translate(0 700) scale(1 -1)"
+					className="phone-svg-container"
+					// transform="translate(0 1000) scale(1 -1)"
 					fill="none"
 				>
 					<path 
