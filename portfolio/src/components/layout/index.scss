@@ -41,4 +41,19 @@
 			left: 10px;
 		}
 	}
+
+	p	{
+		font-style: 13px;
+		color: #fff;
+		font-family: 'Century Gothic';
+		font-weight: 300;
+		min-width: fit-content;
+		animation: pulse 1s;
+		
+		@for $i from 1 through 3	{
+			&:nth-of-type(#{$i})	{
+				animation-delay: #{calc((10 + $i) / 10)}s;
+			}
+		}
+	}
 }
