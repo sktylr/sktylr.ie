@@ -1,14 +1,24 @@
+import { useEffect, useState } from 'react';
 import AnimatedLetters from '../animated-letters';
 import './index.scss'
 
 const About = () => {
+
+	const [letterClass, setLetterClass] = useState('text-animate')
+
+	useEffect(() => {
+		setTimeout(() => {
+			return setLetterClass('text-animate-hover')
+		}, 4000)
+	}, [])
 
 	return (
 		<div className='container about-page'>
 			<div className='text-zone'>
 				<h1>
 					<AnimatedLetters
-						letters={'About me'.split()}
+					letterClass={letterClass}
+						letters={[...'About me']}
 						index={15}
 					/>
 				</h1>
