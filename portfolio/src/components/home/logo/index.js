@@ -7,7 +7,6 @@ const Logo = () => {
 
 	const backgroundRef = useRef();
 	const outlineLogoRef = useRef();
-	const solidLogoRef = useRef();
 
 	useEffect(() => {
 		gsap.registerPlugin(DrawSVGPlugin);
