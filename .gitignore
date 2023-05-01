@@ -25,3 +25,6 @@
 # ide
 .vscode
 
+# secret stuff
+.env
+
