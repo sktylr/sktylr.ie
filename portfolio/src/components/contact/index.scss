@@ -67,5 +67,19 @@
 		border: 1px solid #ffd700;
 		float: right;
 		border-radius: 4px;
+
+		&:hover	{
+			border: 2px solid #fff;
+			margin: -1px;
+			border-radius: 8px;
+			color: #fff;
+		}
+
+		&:active	{
+			background: #ffd700;
+			border: 1px solid #ffd700;
+			color: #115173;
+			border-radius: 4px;
+		}
 	}
 }
