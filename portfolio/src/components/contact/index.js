@@ -3,6 +3,7 @@ import './index.scss'
 import AnimatedLetters from '../animated-letters';
 import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
+import Logo from './logo';
 
 const Contact = () => {
 
@@ -70,6 +71,7 @@ const Contact = () => {
 				</div>
 			</div>
 			<Loader type='pacman' />
+			<Logo />
 		</>
 	)
 }
