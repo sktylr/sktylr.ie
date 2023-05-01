@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/img/dummy-logo.png'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import AnimatedLetters from '../animated-letters'
+import Logo from './logo'
 
 const Home = () => {
 
@@ -31,6 +32,7 @@ const Home = () => {
 				<h2> Software Developer with an interest in back-end services</h2>
 				<Link to="/contact" className='flat-button'> CONTACT ME </Link>
 			</div>
+			<Logo />
 		</div>
 	)
 }
