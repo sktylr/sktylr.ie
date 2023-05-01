@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../animated-letters';
 import './index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGitAlt, faJava, faPython } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
 
@@ -31,6 +33,29 @@ const About = () => {
 				<p>
 					Vel risus commodo viverra maecenas. Neque laoreet suspendisse interdum consectetur libero. Urna duis convallis convallis tellus id interdum velit laoreet. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Pellentesque adipiscing commodo elit at.
 				</p>
+			</div>
+
+			<div className='stage-cube-container'>
+				<div className='cube-spinner'>
+					<div className='face1'>
+						<FontAwesomeIcon icon={faJava} color='#dd0031' />
+					</div>
+					<div className='face2'>
+						<FontAwesomeIcon icon={faPython} color='#dd0031' />
+					</div>
+					<div className='face3'>
+						<FontAwesomeIcon icon={faGitAlt} color='#ec4d28' />
+					</div>
+					<div className='face4'>
+						<FontAwesomeIcon icon={faPython} color='#dd0031' />
+					</div>
+					<div className='face5'>
+						<FontAwesomeIcon icon={faJava} color='#dd0031' />
+					</div>
+					<div className='face6'>
+						<FontAwesomeIcon icon={faGitAlt} color='#ec4d28' />
+					</div>
+				</div>
 			</div>
 		</div>
 	)
