@@ -1,5 +1,4 @@
 import './index.scss';
-import SolidLogo from '../../../assets/img/dummy-logo.png'
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap-trial';
 import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin';
