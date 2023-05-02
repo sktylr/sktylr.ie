@@ -3,6 +3,7 @@ import './index.scss';
 import AnimatedLetters from '../animated-letters';
 import { useEffect, useState } from 'react';
 import Project from './project';
+import XeldaLogo from '../../assets/img/xelda-logo.jpeg';
 
 const Projects = () => {
 
@@ -16,7 +17,15 @@ const Projects = () => {
 
 	// n projects
 	const raw = {
-		title: 'Testing 123'
+		title: 'Testing 123',
+		images: [
+			// {
+			// 	// source: XeldaLogo,
+			// 	source: '../../../assets/img/xelda-logo.jpeg',
+			// 	alt: 'Xelda logo'
+			// },
+			<img source={XeldaLogo} alt='Xelda-logo' />
+		]
 	}
 	const projects = [<Project projectRaw={raw} index={0} key={0} />, <Project projectRaw={raw} index={1} key={1} />]
 
