@@ -36,7 +36,7 @@ const About = () => {
 					<p>
 						Vel risus commodo viverra maecenas. Neque laoreet suspendisse interdum consectetur libero. Urna duis convallis convallis tellus id interdum velit laoreet. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Pellentesque adipiscing commodo elit at.
 					</p>
-					<a href={CV} target='_blank' rel='noreferrer'>
+					<a href={CV} target='_blank' rel='noreferrer' className='flat-button'>
 						{/* <button> MY CV </button> */}
 						MY CV
 					</a>
