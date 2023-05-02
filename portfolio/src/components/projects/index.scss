@@ -1,4 +1,5 @@
 .scrollable	{
-	overflow-y: scroll;
-	width: 1000px;
+	overflow-y: scroll !important;
+	width: 100% !important;
+	height: 100% !important;
 }

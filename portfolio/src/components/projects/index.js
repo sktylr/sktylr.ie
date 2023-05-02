@@ -5,7 +5,7 @@ const Projects = () => {
 	return (
 		<>
 			<div className="container projects-page">
-				<div className="scrollable">
+				<div className="scrollable text-zone">
 					<h1> TESTING </h1>
 					<h1> TESTING </h1>
 					<h1> TESTING </h1>
