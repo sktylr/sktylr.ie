@@ -1,6 +1,7 @@
-.testing	{
+.project-container	{
 	display: flex;
 	width: calc(85% - 10px);
+	padding-bottom: 35px;
 }
 
 .side	{
@@ -13,6 +14,22 @@
 .side-content-center	{
 	display: flex;
 	align-items: center;
+}
+
+.text-side	{
+	display: flex;
+	align-items: center;
+	flex: 1;
+	padding: 10px;
+	width: 80%;
+}
+
+.image-side	{
+	flex: 1;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	width: 20%;
 }
 
 .sub-heading	{

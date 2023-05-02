@@ -15,7 +15,7 @@ const Projects = () => {
 	}, [])
 
 	// n projects
-	const projects = [<Project />]
+	const projects = [<Project index={0} key={0} />, <Project index={1} key={1} />]
 
 	return (
 		<>
