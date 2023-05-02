@@ -1,16 +1,16 @@
 import './index.scss';
-import Logo from '../../../assets/img/dummy-logo.png'
+// import Logo from '../../../assets/img/dummy-logo.png'
 import XeldaLogo from '../../../assets/img/xelda-logo.jpeg';
 
 function renderText(text)	{
 
-	const toRender = []
+	// const toRender = []
 
-	const renderIndividualText = (individ) => {
-		return (
-			0
-		)
-	}
+	// const renderIndividualText = (individ) => {
+	// 	return (
+	// 		0
+	// 	)
+	// }
 
 	return (
 		<div className='text-side'>
