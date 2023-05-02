@@ -2,6 +2,7 @@ import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../animated-letters';
 import { useEffect, useState } from 'react';
+import Project from './project';
 
 const Projects = () => {
 
@@ -14,7 +15,7 @@ const Projects = () => {
 	}, [])
 
 	// n projects
-	const projects = []
+	const projects = [<Project />]
 
 	return (
 		<>

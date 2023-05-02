@@ -1,0 +1,16 @@
+.testing	{
+	display: flex;
+	width: 85%;
+}
+
+.side	{
+	flex: 1;
+	padding: 10px;
+	border: 1px dashed red;
+	width: max-content;
+}
+
+.side-content-center	{
+	display: flex;
+	align-items: center;
+}
