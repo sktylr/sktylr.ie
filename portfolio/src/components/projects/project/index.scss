@@ -1,6 +1,6 @@
 .testing	{
 	display: flex;
-	width: 85%;
+	width: calc(85% - 10px);
 }
 
 .side	{
@@ -17,4 +17,11 @@
 
 .sub-heading	{
 	color: #fff !important;
+	font-size: 45px;
+	font-family: 'Century Gothic';
+	font-weight: 350;
+	margin-top: 0;
+	position: relative;
+	margin-bottom: 40px;
+	left: 10px;
 }
