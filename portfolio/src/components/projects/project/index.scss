@@ -4,22 +4,8 @@
 	padding-bottom: 35px;
 }
 
-.side	{
-	flex: 1;
-	padding: 10px;
-	border: 1px dashed red;
-	width: fit-content;
-}
-
-.side-content-center	{
-	display: flex;
-	align-items: center;
-}
-
 .text-side	{
-	display: flex;
-	align-items: center;
-	flex: 1;
+	flex: 2;
 	padding: 10px;
 	width: 80%;
 }

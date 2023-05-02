@@ -3,7 +3,7 @@ import Logo from '../../../assets/img/dummy-logo.png'
 
 function renderText(text)	{
 	return (
-		<div className='side'>
+		<div className='text-side'>
 			{text}
 		</div>
 	)
@@ -11,7 +11,7 @@ function renderText(text)	{
 
 function renderImages(images)	{
 	return (
-		<div className='side side-content-center'>
+		<div className='image-side'>
 			<div>
 				{images}
 			</div>
