@@ -7,10 +7,14 @@
 	flex: 1;
 	padding: 10px;
 	border: 1px dashed red;
-	width: max-content;
+	width: fit-content;
 }
 
 .side-content-center	{
 	display: flex;
 	align-items: center;
+}
+
+.sub-heading	{
+	color: #fff !important;
 }
