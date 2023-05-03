@@ -1,6 +1,7 @@
 import './index.scss';
 // import Logo from '../../../assets/img/dummy-logo.png'
 import XeldaLogo from '../../../assets/img/xelda-logo.jpeg';
+import LazyShow from './lazy-show';
 
 function renderText(text)	{
 
@@ -79,12 +80,12 @@ const Project = ({ projectRaw, index }) => {
 	} else toRender.push(renderText(text), renderImages(images))
 
 	return (
-		<>
+		<LazyShow>
 			<h2 className='sub-heading'> {projectRaw.title} </h2>
 			<div className='project-container'>
 				{toRender}
 			</div>
-		</>
+		</LazyShow>
 	)
 }
 

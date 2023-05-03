@@ -37,11 +37,11 @@ const LazyShow = ({ children }) =>	{
 
 	useEffect(() => {
 		if (onScreen)	{
-			constols.start({
+			controls.start({
 				x: 0,
 				opacity: 1,
 				transition:	{
-					duration: 0.5,
+					duration: 5,
 					ease: 'easeOut'
 				}
 			});
