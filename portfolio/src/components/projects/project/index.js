@@ -1,5 +1,10 @@
 import './index.scss';
 import LazyShow from './lazy-show';
+// import Images from '../../../assets/img';
+
+const locateImage = (path) => (
+	require(`../../../assets/img/${path}`)
+)
 
 const renderText = (text) =>	(
 	<div className='text-side'>
@@ -11,25 +16,35 @@ const renderText = (text) =>	(
 	</div>
 )
 
-const renderImage = (image) => (
+const renderImage = (image) => {
+	console.log(image);
+
+	return (
 	<div className='image-side'>
 		<div>
-			<img src={image} alt=''/>
+			{/* <img src={image} alt=''/> */}
+			{/* <img src={require(`assets/img/${image}`)} alt='' /> */}
+			{/* <img src={image} alt='' /> */}
+			{/* <img src={locateImage(image)} alt='' /> */}
+			<img src={image.source} alt='' />
 		</div>
 	</div>
 )
+	}
 
 const Project = ({ projectRaw, index, img }) => {
 
 	const toRender = []
+	let left = true;
 
 	// choose which side to render the text on
 	if (index % 2 === 1)	{ 
 		toRender.push(renderImage(img), renderText(projectRaw.content))
+		left = false;
 	} else toRender.push(renderText(projectRaw.content), renderImage(img))
 
 	return (
-		<LazyShow>
+		<LazyShow left={left}>
 			<h2 className='sub-heading'> {projectRaw.title} </h2>
 			<div className='project-container'>
 				{toRender}
