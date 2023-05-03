@@ -4,6 +4,7 @@ import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGitAlt, faJava, faPython } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import CV from '../../assets/data/CV.pdf'
 
 const About = () => {
 
@@ -35,6 +36,10 @@ const About = () => {
 					<p>
 						Vel risus commodo viverra maecenas. Neque laoreet suspendisse interdum consectetur libero. Urna duis convallis convallis tellus id interdum velit laoreet. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Pellentesque adipiscing commodo elit at.
 					</p>
+					<a href={CV} target='_blank' rel='noreferrer' className='flat-button'>
+						{/* <button> MY CV </button> */}
+						MY CV
+					</a>
 				</div>
 
 				<div className='stage-cube-container'>
@@ -60,7 +65,6 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-
 			<Loader type='pacman' />
 		</>
 	)
