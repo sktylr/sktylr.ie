@@ -15,17 +15,14 @@ const renderText = (text) =>	(
 	</div>
 )
 
-const renderImage = (image) => {
-	console.log(image);
-
-	return (
+const renderImage = (image) => (
 	<div className='image-side'>
 		<div>
-			<img src={locateImage(image.source)} alt='' />
+			<img src={locateImage(image.source)} alt={image.alt} />
 		</div>
 	</div>
 )
-	}
+
 
 const Project = ({ projectRaw, index, img }) => {
 

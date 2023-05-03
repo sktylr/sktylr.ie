@@ -19,7 +19,6 @@ const Projects = () => {
 	const projects = []
 
 	for (let i = 0; i < RawProjects.projects.length; i++)	{
-		console.log('FIRST LOOP ' + i);
 		let image = RawProjects.projects[i].image;
 		projects.push(
 			<Project projectRaw={RawProjects.projects[i]} img={image} index={i} key={i} />

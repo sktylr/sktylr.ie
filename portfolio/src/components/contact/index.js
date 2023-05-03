@@ -18,8 +18,7 @@ const Contact = () => {
 
 	const sendEmail = (email) => {
 		email.preventDefault()
-	
-		console.log(process.env.REACT_APP_EMAIL_SERVICE_KEY);
+
 		emailjs
 		  .sendForm(process.env.REACT_APP_EMAIL_SERVICE_KEY, process.env.REACT_APP_EMAIL_TEMPLATE_KEY, refForm.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
 		  .then(

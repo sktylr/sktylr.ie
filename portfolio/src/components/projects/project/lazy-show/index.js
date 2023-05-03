@@ -31,7 +31,7 @@ const useOnScreen = (ref, rootMargin = '0px') =>	{
 }
 
 const LazyShow = ({ children, left }) =>	{
-	console.log('LEFT IS ' + left);
+
 	const controls = useAnimation();
 	const rootRef = useRef();
 	const onScreen = useOnScreen(rootRef);
