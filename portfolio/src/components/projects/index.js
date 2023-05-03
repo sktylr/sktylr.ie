@@ -3,7 +3,6 @@ import './index.scss';
 import AnimatedLetters from '../animated-letters';
 import { useEffect, useState } from 'react';
 import Project from './project';
-import XeldaLogo from '../../assets/img/xelda-logo.jpeg';
 import RawProjects from '../../assets/data/projects.json'
 
 const Projects = () => {

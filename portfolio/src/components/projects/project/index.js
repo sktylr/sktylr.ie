@@ -1,6 +1,5 @@
 import './index.scss';
 import LazyShow from './lazy-show';
-// import Images from '../../../assets/img';
 
 const locateImage = (path) => (
 	require(`../../../assets/img/${path}`)
