@@ -52,7 +52,7 @@
 		min-width: fit-content;
 		animation: pulse 1s;
 		
-		@for $i from 1 through 3	{
+		@for $i from 1 through 5	{
 			&:nth-of-type(#{$i})	{
 				animation-delay: #{calc((10 + $i) / 10)}s;
 			}
