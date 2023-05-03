@@ -38,53 +38,52 @@ const LazyShow = ({ children, left }) =>	{
 
 	useEffect(() => {
 		if (onScreen)	{
-			if (left)	{
-				controls.start({
-					x: 0,
-					opacity: 1,
-					transition:	{
-						duration: 0.8,
-						ease: 'easeIn',
-						delay: 1,
-					}
-				});
-			} else	{
-				console.log('WINDOW WIDTH: ' + window.innerWidth);
-				// controls.start({
-				// 	x: 0,
-				// 	opacity: 1,
-				// 	transition:	{
-				// 		duration: 0.8,
-				// 		ease: 'easeIn',
-				// 		delay: 1,
-				// 		// staggerDirection: -1,
-				// 		from: window.innerWidth / 2,
-				// 		// from: 100
-				// 	}
-				// })
-				controls.start({
-					x: 0,
-					opacity: 1,
-					transition:	{
-						duration: 0.8,
-						ease: 'easeIn',
-						delay: 1,
-						// staggerDirection: -1,
-						// from: window.innerWidth / 2,
-						// from: 100
-					}
-				})
+			const transition = {
+				duration: 0.8,
+				ease: 'easeIn',
+				delay: 0.8,
 			}
+			if (!left)	{
+				transition.from = '90%'
+			}
+
+			controls.start({
+				x: 0,
+				opacity: 1,
+				transition:	transition
+			});
+
+			// if (left)	{
+
+			// 	controls.start({
+			// 		x: 0,
+			// 		opacity: 1,
+			// 		transition:	{
+			// 			duration: 0.8,
+			// 			ease: 'easeIn',
+			// 			delay: 0.8,
+			// 		}
+			// 	});
+			// } else	{
+			// 	controls.start({
+			// 		x: 0,
+			// 		opacity: 1,
+			// 		transition:	{
+			// 			duration: 0.8,
+			// 			ease: 'easeIn',
+			// 			delay: 0.8,
+			// 			from: '90%'
+			// 		}
+			// 	})
+			// }
 		}
 	}, [onScreen, controls, left]);
-
-	const x = left ? -100 : -100; 
 
 	return (
 		<motion.div
 			className='lazy-div'
 			ref={rootRef}
-			initial={{opacity: 0, x: x}}
+			initial={{opacity: 0, x: -100}}
 			animate={controls}
 		>
 			{children}
