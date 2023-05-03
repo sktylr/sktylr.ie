@@ -41,7 +41,7 @@ const LazyShow = ({ children }) =>	{
 				x: 0,
 				opacity: 1,
 				transition:	{
-					duration: 5,
+					duration: 0.8,
 					ease: 'easeOut'
 				}
 			});
@@ -52,7 +52,7 @@ const LazyShow = ({ children }) =>	{
 		<motion.div
 			className='lazy-div'
 			ref={rootRef}
-			initial={{opacity: 0, x: -10}}
+			initial={{opacity: 0, x: -100}}
 			animate={controls}
 		>
 			{children}

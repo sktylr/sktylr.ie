@@ -15,6 +15,12 @@ const Projects = () => {
 		}, 4000)
 	}, [])
 
+	const getImage = () => {
+		return (
+			<img src={XeldaLogo} alt='xelda logo' />
+		)
+	}
+
 	// n projects
 	const raw = {
 		title: 'Testing 123',
@@ -24,10 +30,16 @@ const Projects = () => {
 			// 	source: '../../../assets/img/xelda-logo.jpeg',
 			// 	alt: 'Xelda logo'
 			// },
-			<img source={XeldaLogo} alt='Xelda-logo' />
-		]
+			// <img source={XeldaLogo} alt='Xelda-logo' />,
+			getImage
+		],
+		// image: {
+		// 	source: XeldaLogo,
+		// 	alt: 'Xelda Logo'
+		// }
+		image: <img src={XeldaLogo} alt='' />
 	}
-	const projects = [<Project projectRaw={raw} index={0} key={0} />, <Project projectRaw={raw} index={1} key={1} />]
+	const projects = [<Project projectRaw={raw} img={XeldaLogo} index={0} key={0} />, <Project projectRaw={raw} index={1} key={1} />]
 
 	return (
 		<>
