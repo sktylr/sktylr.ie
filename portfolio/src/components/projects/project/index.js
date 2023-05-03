@@ -22,11 +22,7 @@ const renderImage = (image) => {
 	return (
 	<div className='image-side'>
 		<div>
-			{/* <img src={image} alt=''/> */}
-			{/* <img src={require(`assets/img/${image}`)} alt='' /> */}
-			{/* <img src={image} alt='' /> */}
-			{/* <img src={locateImage(image)} alt='' /> */}
-			<img src={image.source} alt='' />
+			<img src={locateImage(image.source)} alt='' />
 		</div>
 	</div>
 )
