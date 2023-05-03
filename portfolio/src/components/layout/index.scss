@@ -19,6 +19,7 @@
 	animation-delay: 1s;
 }
 
+.projects-page,
 .contact-page,
 .about-page	{
 	.text-zone	{
@@ -51,7 +52,7 @@
 		min-width: fit-content;
 		animation: pulse 1s;
 		
-		@for $i from 1 through 3	{
+		@for $i from 1 through 5	{
 			&:nth-of-type(#{$i})	{
 				animation-delay: #{calc((10 + $i) / 10)}s;
 			}
@@ -62,5 +63,26 @@
 		&:hover	{
 			color: #fff;
 		}
+	}
+}
+
+
+
+.flat-button	{
+	color: #ffd700;
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 4px;
+	text-decoration: none;
+	padding: 10px 18px;
+	border: 1px solid #ffd700;
+	margin-top: 25px;
+	float: left;
+	animation: fadeIn 1s 1.8s backwards;
+	white-space: nowrap;
+
+	&:hover	{
+		background: #ffd700;
+		color: #333;
 	}
 }
