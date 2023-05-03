@@ -13,6 +13,7 @@
     "animate.css": "^4.1.1",
     "framer-motion": "^10.12.7",
     "gsap-trial": "^3.11.5",
+    "kute.js": "^2.2.4",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -20,6 +21,7 @@
     "react-router-dom": "^6.11.0",
     "react-scripts": "5.0.1",
     "sass": "^1.62.1",
+    "vivus": "^0.4.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

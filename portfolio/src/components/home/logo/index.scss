@@ -32,3 +32,26 @@
 	stroke: #ffd700;
 	stroke-width: 10;
 }
+
+.zfmXffeD_0{
+	stroke-dasharray:9721 9723;
+	stroke-dashoffset:9722;
+	animation:zfmXffeD_draw 2000ms linear 0ms forwards;
+}
+
+@keyframes zfmXffeD_draw{
+	100%{
+		stroke-dashoffset:0;
+	}
+}
+
+@keyframes zfmXffeD_fade{
+	0%	{
+		stroke-opacity:1;
+	}
+	94.44444444444444%	{
+		stroke-opacity:1;
+	}
+	100%
+	{stroke-opacity:0;}
+}
