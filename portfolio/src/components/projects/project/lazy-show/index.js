@@ -52,30 +52,6 @@ const LazyShow = ({ children, left }) =>	{
 				opacity: 1,
 				transition:	transition
 			});
-
-			// if (left)	{
-
-			// 	controls.start({
-			// 		x: 0,
-			// 		opacity: 1,
-			// 		transition:	{
-			// 			duration: 0.8,
-			// 			ease: 'easeIn',
-			// 			delay: 0.8,
-			// 		}
-			// 	});
-			// } else	{
-			// 	controls.start({
-			// 		x: 0,
-			// 		opacity: 1,
-			// 		transition:	{
-			// 			duration: 0.8,
-			// 			ease: 'easeIn',
-			// 			delay: 0.8,
-			// 			from: '90%'
-			// 		}
-			// 	})
-			// }
 		}
 	}, [onScreen, controls, left]);
 
