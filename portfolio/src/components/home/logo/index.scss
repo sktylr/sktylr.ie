@@ -13,22 +13,48 @@
 		width: 100%;
 		height: auto;
 		bottom: 0;
-
-	}
-
-	.solid-logo	{
-		position: absolute;
-		top: auto;
-		right: auto;
-		bottom: auto;
-		left: 0;
-		margin: auto;
-		width: 100%;
-		z-index: 1;
+		animation: fadeInBottomRight 3s 1s;
+		animation-fill-mode: forwards;
 	}
 }
 
 .svg-container	{
 	stroke: #ffd700;
 	stroke-width: 10;
+}
+
+.zfmXffeD_0{
+	stroke-dasharray:9721 9723;
+	stroke-dashoffset:9722;
+	animation: zfmXffeD_draw 2000ms linear 4000ms forwards;
+}
+
+@keyframes zfmXffeD_draw{
+	0%	{
+		stroke-opacity: 1;
+	}
+	100%{
+		stroke-dashoffset:0;
+	}
+}
+
+@keyframes zfmXffeD_fade{
+	0%	{
+		stroke-opacity:1;
+	}
+	33%	{
+		stroke-opacity: 1;
+	}
+	50%	{
+		stroke-opacity: 1;
+	}
+	67%	{
+		stroke-opacity: 1;
+	}
+	94.44444444444444%	{
+		stroke-opacity:1;
+	}
+	100%	{
+		stroke-opacity:0;
+	}
 }
