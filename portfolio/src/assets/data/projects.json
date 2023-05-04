@@ -11,6 +11,10 @@
 			"image" : {
 				"source" : "xelda-logo.jpeg",
 				"alt" : "Xelda logo"
+			},
+			"link" : {
+				"url" : "https://xelda.com/",
+				"alt" : "XELDA WEBSITE"
 			}
 		}
 	]
