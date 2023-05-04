@@ -55,25 +55,24 @@
 
 .s	{
 	font-size: 60px;
-	color: #00f;
-	// opacity: 0;
-	// animation: backInRight 1s 1.8s backwards;
-	// animation-delay: 1.4s;
-	// animation-fill-mode: forwards;
-	// animation-name: test;
-	animation-name: test;
-	animation-duration: 1.8s;
+	color: #2a9df4;
+	opacity: 0;
+	animation-name: slide-in;
+	animation-duration: 2.2s;
 	animation-delay: 1s;
+	animation-fill-mode: forwards;
 }
 
-@keyframes test	{
+@keyframes slide-in	{
 	0%	{
 		margin-left: 35%;
 	}
 	50%	{
+		opacity: 0.5;
 		margin-left: 50%;
 	}
 	100%	{
+		opacity: 1;
 		margin-left: 0%;
 	}
 }
