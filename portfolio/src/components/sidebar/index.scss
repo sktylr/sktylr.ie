@@ -10,12 +10,24 @@
 	.logo	{
 		display: block;
 		padding: 8px 0;
+		text-decoration: none;
 
 		img	{
 			display: block;
 			margin: 8px auto;
 			width: 24px;
 			height: auto;
+		}
+
+		span	{
+			font-size: 60px;
+			color: #2a9df4;
+
+			div	{
+				font-size: 10px;
+				text-align: center;
+				letter-spacing: 3px;
+			}
 		}
 	}
 
