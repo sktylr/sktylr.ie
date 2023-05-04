@@ -31,7 +31,11 @@ const Project = ({ projectRaw, index, img }) => {
 	let left = true;
 
 	const externalLink = () => (
-		projectRaw.link ? <a href={projectRaw.link.url} className='flat-button' target='_blank' rel='noreferrer'> {projectRaw.link.alt} </a> : null
+		projectRaw.link ? (
+			<div className='external-link'>
+				<a href={projectRaw.link.url} className='flat-button external-link' target='_blank' rel='noreferrer'> {projectRaw.link.alt} </a>
+			</div>
+		) : null
 	)
 
 	console.log(projectRaw.link);

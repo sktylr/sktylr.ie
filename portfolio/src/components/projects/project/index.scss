@@ -32,3 +32,14 @@
 	margin-bottom: 40px;
 	left: 10px;
 }
+
+.external-link	{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	a	{
+		width: fit-content;
+	}
+}
