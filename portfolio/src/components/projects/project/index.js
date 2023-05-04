@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './index.scss';
 import LazyShow from './lazy-show';
 
@@ -29,6 +30,12 @@ const Project = ({ projectRaw, index, img }) => {
 	const toRender = []
 	let left = true;
 
+	const externalLink = () => (
+		projectRaw.link ? <a href={projectRaw.link.url} className='flat-button' target='_blank' rel='noreferrer'> {projectRaw.link.alt} </a> : null
+	)
+
+	console.log(projectRaw.link);
+
 	// choose which side to render the text on
 	if (index % 2 === 1)	{ 
 		toRender.push(renderImage(img), renderText(projectRaw.content))
@@ -40,6 +47,7 @@ const Project = ({ projectRaw, index, img }) => {
 			<h2 className='sub-heading'> {projectRaw.title} </h2>
 			<div className='project-container'>
 				{toRender}
+				{externalLink()}
 			</div>
 		</LazyShow>
 	)
