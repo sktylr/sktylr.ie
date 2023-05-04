@@ -60,13 +60,15 @@
 	// animation: backInRight 1s 1.8s backwards;
 	// animation-delay: 1.4s;
 	// animation-fill-mode: forwards;
+	// animation-name: test;
 	animation-name: test;
-	animation-duration: 4s;
+	animation-duration: 1.8s;
+	animation-delay: 1s;
 }
 
 @keyframes test	{
 	0%	{
-		margin-left: 0%;
+		margin-left: 35%;
 	}
 	50%	{
 		margin-left: 50%;
