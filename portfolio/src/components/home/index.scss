@@ -52,3 +52,26 @@
 		}
 	}
 }
+
+.s	{
+	font-size: 60px;
+	color: #00f;
+	// opacity: 0;
+	// animation: backInRight 1s 1.8s backwards;
+	// animation-delay: 1.4s;
+	// animation-fill-mode: forwards;
+	animation-name: test;
+	animation-duration: 4s;
+}
+
+@keyframes test	{
+	0%	{
+		margin-left: 0%;
+	}
+	50%	{
+		margin-left: 50%;
+	}
+	100%	{
+		margin-left: 0%;
+	}
+}
