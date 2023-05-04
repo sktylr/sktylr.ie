@@ -14,7 +14,7 @@ const SLetter = () => (
 const Home = () => {
 
 	const [letterClass, setLetterClass] = useState('text-animate')
-	const nameChars = ['a', 'm']
+	const nameChars = ['a', 'm', ',']
 	const subHeadingChars = [...'A software developer']
 
 	useEffect(() => {
@@ -30,10 +30,10 @@ const Home = () => {
 					<h1> 
 						<AnimatedLetters letterClass={letterClass} letters={['H', 'i', ',']} index={11} />
 						<br />
-						<AnimatedLetters letterClass={letterClass} letters={['I', '\'', 'm', ',']} index={14} />
+						<AnimatedLetters letterClass={letterClass} letters={['I', '\'', 'm']} index={14} />
 						&nbsp;
 						<SLetter />
-						<AnimatedLetters letterClass={letterClass} letters={nameChars} index={18} />
+						<AnimatedLetters letterClass={letterClass} letters={nameChars} index={17} />
 						<br />
 						<AnimatedLetters letterClass={letterClass} letters={subHeadingChars} index={21} />
 					</h1>
