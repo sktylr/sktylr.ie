@@ -15,7 +15,7 @@ const Home = () => {
 
 	const [letterClass, setLetterClass] = useState('text-animate')
 	const nameChars = ['a', 'm']
-	const subHeadingChars = [...'Software developer.']
+	const subHeadingChars = [...'A software developer']
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -30,12 +30,12 @@ const Home = () => {
 					<h1> 
 						<AnimatedLetters letterClass={letterClass} letters={['H', 'i', ',']} index={11} />
 						<br />
-						<AnimatedLetters letterClass={letterClass} letters={['I', '\'', 'm']} index={14} />
+						<AnimatedLetters letterClass={letterClass} letters={['I', '\'', 'm', ',']} index={14} />
 						&nbsp;
 						<SLetter />
-						<AnimatedLetters letterClass={letterClass} letters={nameChars} index={17} />
+						<AnimatedLetters letterClass={letterClass} letters={nameChars} index={18} />
 						<br />
-						<AnimatedLetters letterClass={letterClass} letters={subHeadingChars} index={20} />
+						<AnimatedLetters letterClass={letterClass} letters={subHeadingChars} index={21} />
 					</h1>
 					<h2> Computer Science student with an interest in back-end services</h2>
 					<Link to="/contact" className='flat-button'> CONTACT ME </Link>
