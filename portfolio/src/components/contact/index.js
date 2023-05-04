@@ -44,7 +44,7 @@ const Contact = () => {
 						/>
 					</h1>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra cursus erat, fringilla vestibulum urna consequat sed. Sed sit amet pellentesque risus. Pellentesque tempus elit et tempus elementum. Nullam viverra pellentesque justo, sed commodo neque consequat vitae. Integer convallis erat non tristique suscipit. 
+						I'm always open to new opportunities, particularly in server-side development. Feel free to reach out for a chat using the form below! 
 					</p>
 					<div className='contact-form'>
 						<form ref={refForm} onSubmit={sendEmail}>
