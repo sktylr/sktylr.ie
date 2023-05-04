@@ -34,13 +34,14 @@ const About = () => {
 						/>
 					</h1>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac. Erat imperdiet sed euismod nisi porta. Lobortis elementum nibh tellus molestie nunc non. Aliquam ut porttitor leo a diam sollicitudin tempor. 
+						I'm a driven software developer with a preference towards server-side development. I'm interested in defining and working with powerful API's to facilitate the transport of information over the internet.
 					</p>
 					<p>
-						Quisque non tellus orci ac auctor. Egestas sed tempus urna et pharetra pharetra massa. Nulla facilisi nullam vehicula ipsum a arcu cursus. Cursus sit amet dictum sit amet justo donec enim diam. Erat pellentesque adipiscing commodo elit at imperdiet dui. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus.
+						I'm currently undertaking a Bachelor of the Arts in Computer Science in Trinity College in Dublin, Ireland and I have finished my second year of studies. I'm looking for internships for the summer of 2024 as well as the second semester of my fourth year of college.
+						My skills include Java, Python, REST API's, Git and the Django REST Framework.
 					</p>
 					<p>
-						Vel risus commodo viverra maecenas. Neque laoreet suspendisse interdum consectetur libero. Urna duis convallis convallis tellus id interdum velit laoreet. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Pellentesque adipiscing commodo elit at.
+						Alongside any college work, I always have some form of project on the go to expand my skills and also solve a problem I've encountered in my day to day life. I'm also a keen cyclist and have an interest in photography.
 					</p>
 					<a href={CV} target='_blank' rel='noreferrer' className='flat-button'>
 						MY CV
