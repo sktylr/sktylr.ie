@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Source code structure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+.
+├── public                  
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png   
+│   ├── apple-touch-icon.png     
+│   ├── favicon-16x16.png 
+│   ├── favicon-32x32.png   
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json   
+│   └── robots.txt
+├── src
+│   ├── assets
+│   |	├── data
+│   |	|	├── CV.pdf
+│   │   |	└── projects.json
+│   |	├── fonts
+│   │   |	└── CenturyGothic.ttf
+│   │   └── img
+│   │    	└── xelda-logo.png
+│   ├── components
+│   |	├── about
+│   |	|	├── index.js
+│   │   |	└── index.scss
+│   |	├── animated-letters
+│   |	|	├── index.js
+│   │   |	└── index.scss
+│   |	├── contact
+│   |	|	├── logo
+│   |	|	|	├── index.js
+│   │   |	|	└── index.scss
+│   |	|	├── index.js
+│   │   |	└── index.scss
+│   |	├── home
+│   |	|	├── logo
+│   |	|	|	├── index.js
+│   │   |	|	└── index.scss
+│   |	|	├── index.js
+│   │   |	└── index.scss
+│   |	├── layout
+│   |	|	├── index.js
+│   │   |	└── index.scss
+│   |	├── projects
+│   |	|	├── project
+│   |	|	|	├── index.js
+│   │   |	|	└── index.scss
+│   |	|	├── index.js
+│   │   |	└── index.scss
+│   │   └── sidebar
+│   |	 	├── index.js
+│   │    	└── index.scss
+│   ├── App.js
+│   ├── App.scss
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── webReportVitals.js
+│   └── setupTests.js
+├── package-lock.json
+├── package.json
+└── README.md
+```
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Components
+## about
+* This is the component rendered at the `/about` url
+* It contains 3 short paragraphs, a link to my CV and a 3d animated cube that shows 6 of my skills in graphical format
+## animated-letters
+* This is a component that is rendered into many of the `<h1 />` tags in my website
+* It animates the letters of the `<h1 />` tag by rendering them at 0.1s intervals with an animation
+* It also adds a hover animation when hovering on an individual letter
+## contact
+* This component is rendered at `/contact`
+* It contains a form an end user can fill out to send an email to my email address
+* The email sending is supported by emailJs
+* Logo:
+	* The logo component refers to the phone svg that is rendered to the right hand side of the contact form
+## home
+* This is the main landing page of the website
+* It contains an animated title and a tagline, as well as a link to the contact page
+* Logo:
+	* This component renders a 3d S svg onto the right hand side of the screen
+	* I originally used the gsap library to draw the svg on page load, but this costs money to host publicly, so it currently animates in from the bottom right
+## layout
+* This component describes the layout of each page that is rendered
+* It carries out the things that are needed for all pages, such as a background colour, rendering the sidebar etc to cut down on duplicate code
+* Each page that is rendered is wrapped in a `layout` component
+## projects
+* This component is rendered at `/projects` and disaplys the projects I have worked on
+* Project:
+	* The project component renders an individual project, rendering text, an image and an optional link to another page (external or internal)
+	* The project component handles the logic of choosing which side to render the image on in relation to the text and also which side the component should animate in from
+## sidebar
+* The sidebar component is rendered to the left hand side of all pages (or minimised on mobile / smaller screens)
+* It contains a logo, graphical links to each of the pages on the site and links to my LinkedIn and GitHub profiles
