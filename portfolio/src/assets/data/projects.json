@@ -1,21 +1,38 @@
 {
-	"projects" : [
-		{
-			"title": "Xelda and Trinity API Development",
-			"content":	[
-				"During my second year of college, I took a software engineering module which focused on producing a product for a client. Our client was Xelda, an Irish-based female-led startup attempting to transform how SME's manage their payments stack and working capital. We were tasked with building a RESTful microservice that would integrate with several accountancy service providers and their API's, such as Xero and Sage.",
-				"This was my first experience working on a developement team and also the first time I was using Django or Python, so there was a steep learning curve. The project was very hands-on and allowed me to work on the type of project that interested me. We built an API that interacted with the Xero and Sage API's to allow the creation, updating and reading of several accountancy objects, such as invoices, accounts and journals.",
-				"I was a junior developer on this project, but also undertook other roles such as scrum master for our scrum meetings. As a junior developer, I was heavily involved in the implementation of the product at a code level. Towards the end of the project, I also worked on the development and upkeep of standards within our microservice to ensure that all of our responses were of the same format and that errors were logged.",
-				"This project taught me a huge amount and allowed me to further my skills as a software developer. I was also introduced to many new technologies including Postman, Git and the Django REST Framework."
-			],
-			"image" : {
-				"source" : "xelda-logo.jpeg",
-				"alt" : "Xelda logo"
-			},
-			"link" : {
-				"url" : "https://xelda.com/",
-				"alt" : "XELDA WEBSITE"
-			}
-		}
-	]
+    "projects": [
+        {
+            "title": "Xelda and Trinity API Development",
+            "content": [
+                "During my second year of college, I took a software engineering module which focused on producing a product for a client. Our client was Xelda, an Irish-based female-led startup attempting to transform how SME's manage their payments stack and working capital. We were tasked with building a RESTful microservice that would integrate with several accountancy service providers and their API's, such as Xero and Sage.",
+                "This was my first experience working on a developement team and also the first time I was using Django or Python, so there was a steep learning curve. The project was very hands-on and allowed me to work on the type of project that interested me. We built an API that interacted with the Xero and Sage API's to allow the creation, updating and reading of several accountancy objects, such as invoices, accounts and journals.",
+                "I was a junior developer on this project, but also undertook other roles such as scrum master for our scrum meetings. As a junior developer, I was heavily involved in the implementation of the product at a code level. Towards the end of the project, I also worked on the development and upkeep of standards within our microservice to ensure that all of our responses were of the same format and that errors were logged.",
+                "This project taught me a huge amount and allowed me to further my skills as a software developer. I was also introduced to many new technologies including Postman, Git and the Django REST Framework."
+            ],
+            "image": {
+                "source": "xelda-logo.jpeg",
+                "alt": "Xelda logo"
+            },
+            "link": {
+                "url": "https://xelda.com/",
+                "alt": "XELDA WEBSITE"
+            }
+        },
+        {
+            "title": "Competitor Matching Model",
+            "content": [
+                "During my third year of college, I led a team of 11 computer science students to build a competitor matching machine learning system from scratch alongside industry partners from Integral Ad Science. Using the expertise of IAS's machine learning engineers Ravi Yadav and Paulo da Costa, we constructed a full end-to-end system that given an image will extract relevant logos and perform similarity search on those logos to find the brand the logos belonged to.",
+                "The technologies we worked with included YOLOv7 for object recognition, ResNet50 for vector embeddings and FAISS for approximate nearest neighbour search. We built a fully scalable system that would not require major retraining of a classification model if further brands were to be added to the project's scope.",
+                "I was the team lead for the project which taught me significant skills in terms of team management and task assignment as well as reinforcing my skills in Docker and Git.",
+                "Our project was nominated as one of the top 10 projects from our year and put forward to a panel of industry judges who placed us second overall in our year. We were also placed second in the public vote, which was voted on by invited guests from the industry."
+            ],
+            "image": {
+                "source": "Integral-Ad-Science.jpg",
+                "alt": "IAS logo"
+            },
+            "link": {
+                "url": "https://github.com/ias-tcd/",
+                "alt": "CHECK OUT OUR GITHUB"
+            }
+        }
+    ]
 }
