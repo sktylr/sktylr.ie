@@ -37,8 +37,9 @@ const About = () => {
 						I'm a driven software developer with a preference towards server-side development. I'm interested in defining and working with powerful API's to facilitate the transport of information over the internet.
 					</p>
 					<p>
-						I'm currently undertaking a Bachelor of the Arts in Computer Science in Trinity College in Dublin, Ireland and I have finished my second year of studies. I'm looking for internships for the summer of 2024 as well as the second semester of my fourth year of college.
+						I'm currently undertaking a Bachelor of the Arts in Computer Science in Trinity College in Dublin, Ireland and I have finished my third year of studies.
 						My skills include Java, Python, REST API's, Git and the Django REST Framework.
+                        Take a look at my CV or GitHub account for more information on projects I've been working on!
 					</p>
 					<p>
 						Alongside any college work, I always have some form of project on the go to expand my skills and also solve a problem I've encountered in my day to day life. I'm also a keen cyclist and have an interest in photography.
