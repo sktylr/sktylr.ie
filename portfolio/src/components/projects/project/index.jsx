@@ -1,5 +1,12 @@
 import "./index.scss"
 import LazyShow from "./lazy-show"
+import Xelda from "../../../assets/img/xelda-logo.jpeg"
+import IAS from "../../../assets/img/Integral-Ad-Science.jpg"
+
+const images = {
+    "xelda-logo.jpeg": Xelda,
+    "Integral-Ad-Science.jpg": IAS,
+}
 
 const Text = ({ text }) => (
     <div className="text-side">
@@ -13,7 +20,7 @@ const Image = ({ image }) => (
     <div className="image-side">
         <div style={{ maxWidth: "200px", maxHeight: "200px" }}>
             <img
-                src={`/src/assets/img/${image.source}`}
+                src={images[image.source]}
                 alt={image.alt}
                 style={{ maxWidth: "200px", maxHeight: "200px" }}
             />
