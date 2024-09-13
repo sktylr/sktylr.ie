@@ -7,6 +7,8 @@ import Logo from './logo';
 
 const Contact = () => {
 
+	emailjs.init(import.meta.env.REACT_APP_EMAIL_PUBLIC_KEY);
+
 	const refForm = useRef();
 	const [letterClass, setLetterClass] = useState('text-animate')
 
