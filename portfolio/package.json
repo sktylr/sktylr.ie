@@ -28,10 +28,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "react-scripts start",
-    "build:rs": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "serve": "vite preview",
   },
   "eslintConfig": {
     "extends": [
