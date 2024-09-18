@@ -17,7 +17,7 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.11.0",
     "sass": "^1.62.1",
-    "vite": "^5.4.5",
+    "vite": "^5.4.6",
     "web-vitals": "^4.2.3"
   },
   "scripts": {
